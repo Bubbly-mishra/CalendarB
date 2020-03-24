@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#78F88E"
+    android:onClick="InsertDatabase"
+    tools:context=".MainActivity">
+
+    <!-- Add TextView to display the date -->
+
+    <!-- Add CalenderView to display the Calender -->
+
+
+    <TextView
+        android:id="@+id/date_view"
+        android:layout_width="93dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="155dp"
+        android:layout_marginTop="18dp"
+        android:text="Calendar"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive" />
+
+
+    <CalendarView
+        android:id="@+id/calender"
+        android:layout_width="367dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="80dp"
+        android:background="#30B637"></CalendarView>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/calender"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="32dp"
+        android:text="EVENT"
+        android:textSize="10sp"
+        android:textStyle="bold"
+        app:fontFamily="cursive" />
+
+
+    <EditText
+        android:id="@+id/firstline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="1dp"
+        android:drawableStart="@drawable/ic_cake_black_24dp"
+        android:drawableLeft="@drawable/ic_cake_black_24dp"
+        android:hint="   I and aryan's wedding" />
+
+    <EditText
+        android:id="@+id/secondline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/firstline"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="-7dp"
+        android:drawableStart="@drawable/ic_email_black_24dp"
+        android:drawableLeft="@drawable/ic_email_black_24dp"
+        android:hint="   Participants" />
+
+    <EditText
+        android:id="@+id/thirdline"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/secondline"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="-3dp"
+        android:drawableStart="@drawable/ic_access_alarm_black_24dp"
+        android:drawableLeft="@drawable/ic_access_alarm_black_24dp"
+        android:hint="   participation time" />
+
+    <Button
+        android:id="@+id/buttonSave"
+        android:layout_width="378dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/thirdline"
+        android:layout_marginLeft="19dp"
+        android:layout_marginTop="20dp"
+        android:background="#26C629"
+        android:onClick="InsertDatabase"
+        android:text="Save Event" />
+
+
+</RelativeLayout>
